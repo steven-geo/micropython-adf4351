@@ -1,18 +1,18 @@
 #Example code using the functions of the adf4351 library.
-import adf435x
+import adf4351
 import time
 
 # Set the Frequency
 freq = 433  # MHz
-adf435x.setfrequency(freq)
+adf4351.setfrequency(freq)
 
 # Enable the Output
-adf435x.enable()
+adf4351.enable()
 
-print(f"Is the oscilator Locked: {adf435x.get_locked()}")
+print(f"Is the oscilator Locked: {adf4351.get_locked()}")
 
-sleep(10)
+time.sleep(10)
 
 # Disable the Output
-adf435x.disable()
+adf4351.disable()
 
